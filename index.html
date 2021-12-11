@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+
+</head>
+<body>
+    <section id="weather-card" class="vh-100" style="background-color: #4B515D;">
+        <div class="container py-5 h-100">
+      
+          <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-md-8 col-lg-6 col-xl-4">
+      
+              <div class="card" style="color: #4B515D; border-radius: 35px;">
+                <div class="card-body p-4">
+      
+                  <div class="d-flex" style="justify-content: space-between;">
+                    <h6 class="flex-grow-1" id="location">Warsaw</h6>
+                    <h6 id="time">15:07</h6>
+                  </div>
+      
+                  <div class="d-flex flex-column text-center mt-5 mb-4">
+                    <h6 id="weather" class="display-4 mb-0 font-weight-bold" style="color: #1C2331;"> 13°C </h6>
+                    <span id="weather-condition" class="small" style="color: #868B94">Stormy</span>
+                  </div>
+      
+                  <div class="d-flex align-items-center" style="justify-content: space-between;">
+                    <div class="flex-grow-1" style="font-size: 1rem;">
+                      <div><i class="fas fa-tint fa-fw" style="color: #868B94;"></i> <span  id="humidity" class="ms-1"> 84% </span></div>
+                      <div><i class="fas fa-sun fa-fw" style="color: #868B94;"></i> <span id="pressure" class="ms-1"> 0.2h </span></div>
+                    </div>
+                    <div>
+                      <img id="condition-icon" src="https://mdbootstrap.com/img/Photos/new-templates/bootstrap-weather/ilu1.png" width="100px">
+                    </div>
+                  </div>
+      
+                </div>
+              </div>
+      
+            </div>
+          </div>
+      
+        </div>
+      </section>
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-md-8 col-lg-6 col-xl-4">
+  
+          <h3 class="mb-4 pb-2 fw-normal">Check the weather forecast</h3>
+  
+          <div class="input-group rounded mb-3">
+            <input id="search" type="search" class="form-control rounded" placeholder="City" aria-label="Search"
+              aria-describedby="search-addon" />
+            <button id="search-btn">
+              <span class="input-group-text border-0 fw-bold" id="search-addon">
+                Search
+              </span>
+            </button>
+          </div>
+      <script src="app.js"></script>
+</body>
+</html>
