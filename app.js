@@ -20,7 +20,7 @@ searchInput.addEventListener('input', (e)=> {
     text = e.target.value
 })
 search.addEventListener('click', (e)=> {
-    const API_URL = `http://api.weatherapi.com/v1/forecast.json?key=${API_KEY}&q=${text}`
+    const API_URL = `https://api.weatherapi.com/v1/forecast.json?key=${API_KEY}&q=${text}`
 
     
     fetch(API_URL, {
